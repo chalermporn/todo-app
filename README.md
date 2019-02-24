@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <p align="center"><img src ="./screenshot/screenshot_2562-02-24_at_21.14.15.png" /></p>
 
-# Quick start
+## Quick start
 
 - Clone following repo:
 
@@ -16,4 +16,4 @@ note "." at the end. It will clone files directly into current folder.
 
 - Run `npm i`
 - Run `npm start`
-- Here! Open browser and visit http://localhost:4200
+- Here! Open browser and visit <http://localhost:4200>
