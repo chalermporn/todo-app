@@ -12,18 +12,20 @@ cache:
   directories:
     - node_modules
 
+addons:
+  chrome: stable
+
 install:
   - npm install -g yarn
 
 script:
   - yarn
-  - yarn build --base-href /todo-app/
+  - yarn build --base-href https://chalermporn.github.io/travisci-angular-ghpages/
   - mv dist/todo-app/index.html dist/todo-app/404.html
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist/todo-app
-  keep-history: true
   on:
     branch: master
