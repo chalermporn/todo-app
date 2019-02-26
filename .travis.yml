@@ -16,7 +16,7 @@ install:
   - npm install -g yarn
 
 script:
-  # - yarn lint
+  - yarn
   - yarn build
   # - mv dist/index.html dist/404.html
 deploy:
