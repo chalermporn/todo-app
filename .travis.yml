@@ -18,7 +18,7 @@ install:
 script:
   # - yarn lint
   - yarn build
-  - mv dist/index.html dist/404.html
+  # - mv dist/index.html dist/404.html
 deploy:
   provider: pages
   skip_cleanup: true
