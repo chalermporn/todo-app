@@ -1,7 +1,28 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g yarn
+
+script:
+  - yarn lint
+  - yarn build --base-href /todo-app/
+  - mv dist/todo-app/index.html dist/todo-app/404.html
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: e8b9cc20bb8d339dd1a1b2651227150b708c6035
-  keep-history: true
+  skip_cleanup: true
+  github_token: e8b9cc20bb8d339dd1a1b2651227150b708c6035
+  local_dir: dist/todo-app
   on:
     branch: master
