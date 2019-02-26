@@ -22,7 +22,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: e8b9cc20bb8d339dd1a1b2651227150b708c6035
+  github_token: cf074fbf35ad0492f63dd5edcc58e4a136c6552c
   local_dir: dist/todo-app
   on:
     branch: master
