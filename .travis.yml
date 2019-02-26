@@ -17,8 +17,8 @@ install:
 
 script:
   - yarn
-  - yarn build
-  # - mv dist/index.html dist/404.html
+  - yarn build --base-href /todo-app/
+  - mv dist/todo-app/index.html dist/todo-app/404.html
 deploy:
   provider: pages
   skip_cleanup: true
