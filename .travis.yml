@@ -16,7 +16,7 @@ install:
   - npm install -g yarn
 
 script:
-  - yarn lint
+  # - yarn lint
   - yarn build --base-href /todo-app/
   - mv dist/todo-app/index.html dist/todo-app/404.html
 deploy:
