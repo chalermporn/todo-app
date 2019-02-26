@@ -24,5 +24,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist/todo-app
+  keep-history: true
   on:
     branch: master
