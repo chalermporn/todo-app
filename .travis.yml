@@ -17,3 +17,4 @@ deploy:
   local_dir: dist/todo-app
   on:
     branch: master
+    
