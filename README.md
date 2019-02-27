@@ -1,6 +1,6 @@
 # Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3. [![Build Status](https://travis-ci.com/chalermporn/todo-app.svg?branch=master)](https://travis-ci.com/chalermporn/todo-app)
 
 <p align="center"><img src ="./screenshot/screenshot_2562-02-24_at_21.14.15.png" /></p>
 
