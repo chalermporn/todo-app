@@ -1,22 +1,19 @@
 language: node_js
 node_js:
-  - "8.9.4"
-
+  - "10"
+dist: trusty
+sudo: required
 branches:
   only:
-    - master
-
+  - master
 before_script:
-  - yarn install --frozen-lockfile
-
+  - npm install -g @angular/cli
 script:
-  - yarn build
-
+  - ng build --prod --base-href https://chalermporn.github.io/todo-app/
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/todo-app
   on:
     branch: master
-  local_dir: dist
